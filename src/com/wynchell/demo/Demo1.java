@@ -3,7 +3,7 @@ package com.wynchell.demo;
 import java.util.*;
 
 /**
- * Created by Intellij IDEA.
+ * Created by IntelliJ IDEA.
  * <p>
  * 机题题目第一题：Java基本操作
  * 算法名称：字符串压缩与解压缩
@@ -19,8 +19,8 @@ import java.util.*;
  * 6、提交源代码和运行结果截图，至少提供2条测试用例
  * <p>
  *
- * @author: Wynchell
- * @version: 1.0
+ * author: Wynchell
+ * version: 1.0
  * <p>
  * To change this template use File | Settings | File Templates
  */

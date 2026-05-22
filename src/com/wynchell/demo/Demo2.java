@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.*;
 
 /**
- * Created by Intellij IDEA.
+ * Created by IntelliJ IDEA.
  * 第二题：文件解析与逻辑处理
  * 文件格式：
  * 如下文本文件，文件第一行为表头，使用竖线“|”分割，其他行为表数据，每行为一条记录。
@@ -16,13 +16,13 @@ import java.util.*;
  * 要求：
  * 1、使用java代码读取文本文件并解析
  * 2、按照父子关系生成树形结构
- * 3、将树形结构输出为json格式（可以使用fastjson等json库）
+ * 3、将树形结构输出为json格式（可以使用Fastjson等json库）
  * 4、代码要有封装性
  * 5、代码逻辑清晰，格式优美
  * 6、提交源代码和运行结果截图
- *
- * @author: Wynchell
- * @version: 1.0
+ * <p>
+ * author: Wynchell
+ * version: 1.0
  * <p>
  * To change this template use File | Settings | File Templates
  */
@@ -53,14 +53,14 @@ public class Demo2 {
      * 要求：
      * 1、使用java代码读取文本文件并解析
      * 2、按照父子关系生成树形结构
-     * 3、将树形结构输出为json格式（可以使用fastjson等json库）
+     * 3、将树形结构输出为json格式（可以使用Fastjson等json库）
      * 4、代码要有封装性
      * 5、代码逻辑清晰，格式优美
      * 6、提交源代码和运行结果截图
-     *
-     * @param filePath 文件路径
-     * @return
-     * @throws IOException
+     * <p>
+     * param filePath 文件路径
+     * return
+     * throws IOException
      */
     public static List<MyNode> buildTree(String filePath) throws IOException {
         Map<String, MyNode> nodeMap = new LinkedHashMap<>();
@@ -69,7 +69,8 @@ public class Demo2 {
         // 1. 读取并创建对象
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             // 1.1 跳过表头
-            String line = br.readLine();
+            br.readLine();
+            String line;
             while ((line = br.readLine()) != null) {
                 if (line.trim().isEmpty()) {
                     continue;
